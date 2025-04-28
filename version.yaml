@@ -1,0 +1,13 @@
+v1.0.0:
+    - 'Initialize plugin.'
+    - 'Added all the settings for the plugin.'
+    - 'Added the generation of the OpenGraph image.'
+    - 'Added the cache system for the OpenGraph image.'
+    - 'Added the clear cache button.'
+    - 'Added the settings page in the backend.'
+    - 'Added the lang file for the plugin.'
+    - 'Added the lang file for the settings page.'
+    - 'Added the lang file for the cache page.'
+    - 'Added the lang file for the generation page.'
+    - 'Added the lang file for the clear cache page.'
+    - 'Added the lang file for the settings page.'
