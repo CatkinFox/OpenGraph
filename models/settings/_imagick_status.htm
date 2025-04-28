@@ -1,0 +1,19 @@
+<?php // Use PHP within the partial to access the model and check Imagick
+    if (!$model->isImagickAvailable()) : 
+?>
+
+<div class="callout callout-warning">
+    <div class="header">
+        <i class="icon-warning"></i>
+        <h3><?= e(trans('blackfoxit.opengraph::lang.settings.imagick_status.not_found_title')) ?></h3>
+    </div>
+    <div class="content">
+        <p>
+            <?= e(trans('blackfoxit.opengraph::lang.settings.imagick_status.not_found_desc')) ?>
+        </p>
+    </div>
+</div>
+
+<?php 
+    endif; // End the PHP if statement
+?>

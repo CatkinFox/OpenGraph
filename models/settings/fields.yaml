@@ -1,0 +1,67 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    imagick_status_check:
+        type: partial # Use partial field type
+        path: $/blackfoxit/opengraph/models/settings/_imagick_status.htm # Point to the new partial
+        # This partial will contain the logic to check and display the warning
+
+    background_image:
+        label: blackfoxit.opengraph::lang.settings.background_image.label
+        type: fileupload
+        mode: image
+        imageWidth: 200
+        imageHeight: 105 # Maintain 1200x630 aspect ratio
+        commentAbove: blackfoxit.opengraph::lang.settings.background_image.comment_above
+        comment: blackfoxit.opengraph::lang.settings.background_image.comment
+        span: left
+
+    font_file:
+        label: blackfoxit.opengraph::lang.settings.font_file.label
+        type: fileupload
+        mode: file
+        fileTypes: ttf # Restrict to TTF only
+        commentAbove: blackfoxit.opengraph::lang.settings.font_file.comment_above
+        comment: blackfoxit.opengraph::lang.settings.font_file.comment
+        span: right
+
+    text_position:
+        label: blackfoxit.opengraph::lang.settings.text_position.label
+        type: dropdown
+        options: getTextPositionOptions # Calls the method in the Settings model
+        comment: blackfoxit.opengraph::lang.settings.text_position.comment
+        default: CenterMiddle
+        span: left
+
+    font_size:
+        label: blackfoxit.opengraph::lang.settings.font_size.label
+        type: number
+        default: 50 # Default font size (adjust as needed)
+        min: 10
+        max: 150
+        step: 1
+        comment: blackfoxit.opengraph::lang.settings.font_size.comment
+        span: right
+
+    font_color:
+        label: blackfoxit.opengraph::lang.settings.font_color.label
+        type: colorpicker
+        default: '#FFFFFF' # Default to white
+        availableColors: ['#FFFFFF', '#000000', '#FF0000', '#00FF00', '#0000FF'] # Example presets
+        comment: blackfoxit.opengraph::lang.settings.font_color.comment
+        span: left
+
+    clear_cache_button:
+        # label: blackfoxit.opengraph::lang.settings.cache.clear_button_label # Label/comment handled in partial
+        type: partial
+        path: $/blackfoxit/opengraph/models/settings/_clear_cache_button.htm
+        span: right # Place it next to font color
+
+    # Spacer or Section for Button maybe?
+    # _clear_cache_section:
+    #     type: section
+    #     label: Cache Management
+    #     comment: Manage the generated image cache.
+    #     span: full 
