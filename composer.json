@@ -2,7 +2,9 @@
     "name": "blackfoxit/opengraph-plugin",
     "description": "Generates OpenGraph images automatically for October CMS pages.",
     "type": "october-plugin",
-    "license": "MIT",
+    "homepage": "https://github.com/CatkinFox/OpenGraph",
+    "keywords": ["octobercms", "opengraph", "image", "seo", "social"],
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "BlackFox IT",
@@ -10,10 +12,12 @@
         }
     ],
     "require": {
-        "php": ">=7.4",
-        "composer/installers": "~1.0 || ~2.0"
+        "php": ">=8.0.2",
+        "composer/installers": "~1.0 || ~2.0",
+        "october/rain": ">=3.0"
     },
     "extra": {
         "installer-name": "opengraph"
-    }
+    },
+    "minimum-stability": "stable"
 } 
