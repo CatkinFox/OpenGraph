@@ -11,3 +11,6 @@ v1.0.0:
     - 'Added the lang file for the generation page.'
     - 'Added the lang file for the clear cache page.'
     - 'Added the lang file for the settings page.'
+
+v1.0.1
+    - 'Fixed composer.json file to match the required format of OctoberCMS plugins'
